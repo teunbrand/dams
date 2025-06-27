@@ -111,8 +111,8 @@ gfx_map <- gfx_map + geom_polygon(aes(x = long, y = lat, group = group,
             fill = dams))
 gfx_map <- gfx_map + geom_path(data = geo_state, aes(x = long, y = lat,
             group = group, fill = NA))
-gfx_map <- gfx_map + labs(list(title = "Number of Dams in the NID Database",
-            x = NULL, y = NULL))
+gfx_map <- gfx_map + labs(title = "Number of Dams in the NID Database",
+            x = NULL, y = NULL)
 gfx_map <- gfx_map + guides(fill = guide_legend(title = "Number of Dams"))
 gfx_map <- gfx_map + scale_fill_brewer(palette = "Accent")
 gfx_map <- gfx_map + coord_map()
